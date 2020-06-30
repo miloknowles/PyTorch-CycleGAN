@@ -24,7 +24,7 @@ Valid <dataset_name> are: apple2orange, summer2winter_yosemite, horse2zebra, mon
 Alternatively you can build your own dataset by setting up the following directory structure:
 
     .
-    ├── datasets                   
+    ├── datasets
     |   ├── <dataset_name>         # i.e. brucewayne2batman
     |   |   ├── train              # Training
     |   |   |   ├── A              # Contains domain A images (i.e. Bruce Wayne)
@@ -32,7 +32,7 @@ Alternatively you can build your own dataset by setting up the following directo
     |   |   └── test               # Testing
     |   |   |   ├── A              # Contains domain A images (i.e. Bruce Wayne)
     |   |   |   └── B              # Contains domain B images (i.e. Batman)
-    
+
 ### 2. Train!
 ```
 ./train --dataroot datasets/<dataset_name>/ --cuda
